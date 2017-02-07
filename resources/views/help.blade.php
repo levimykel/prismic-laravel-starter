@@ -88,9 +88,9 @@ Route::get('/page/{uid}', function ($uid, Request $request) {
 
 &#123;{-- Create a content section --}}
 &#64;section('content')
-        &lt;div>
+        &lt;div class="welcome">
                 &#123;{-- This is how to get an image into your template --}}
-                &lt;img src="&#123;{ $pageContent->getImage('{{'page.image'}}')->getUrl() }}" />
+                &lt;img class="star" src="&#123;{ $pageContent->getImage('{{'page.image'}}')->getUrl() }}" />
                 
                 &#123;{-- This is how to get structured text fields into your template --}}
                 &#123;!! $pageContent->getStructuredText('{{'page.title'}}')->asHtml($linkResolver) !!}

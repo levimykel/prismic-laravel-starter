@@ -43,8 +43,8 @@ Route::get('/preview', function (Request $request) {
 /**
  * Index Route
  */
-Route::get('/', function () {
-    return redirect('/help');
+Route::get('/', function (Request $request) {
+    return view('index');
 });
 
 
